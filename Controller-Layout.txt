@@ -1,22 +1,31 @@
 -- Controller Layout --
-( This file is used by team 5024 to keep track of uttons on the controllers )
 
-EXAMPLE FOR POWERUP:
+Driver Controller
+Button A       : 
+Button B       : 
+Button X       : 
+Button Y       :
+Left Stick     : 
+Left Bumper    :
+Left Trigger   : 
+Right Stick    :
+Right Bumper   : 
+Right Trigger  : 
+Directional Pad:
+Start Button   :
+Back Button    :
 
-DRIVER:
-
-LEFT_JOY - drive
-LEFT_TRIGGER - cube in
-RIGHT_TRIGGER - cube out
-RIGHT_BUMPER - slowmode (hold)
-BTN_A - close gripper
-BTN_B - open gripper
-BTN_X - reverse controls
-BTN_Y - robot 180
-
-OPERATOR:
-
-DPAD_UP - elevator posistion (switch)
-DPAD_RIGHT - elevator posistion (vault)
-DPAD_DOWN - elevator posistion (ground)
-DPAD_LEFT - climb
+Operator Controller
+Button A + LB  : 
+Button B + RB  : 
+Button X       : 
+Button Y       :
+Left Stick     :
+Left Bumper    :
+Left Trigger   : 
+Right Stick    :
+Right Bumper   :
+Right Trigger  : 
+Directional Pad:
+Start Button   : 
+Back Button    : 

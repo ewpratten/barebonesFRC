@@ -1,21 +1,16 @@
-#ifndef _DRIVEWITHJOYSTICK_HG_
-#define _DRIVEWITHJOYSTICK_HG_
+
+#pragma once
 
 #include <CommandBase.hpp>
 #include <WPILib.h>
 
-class DriveWithJoystick: public CommandBase {
+class GenericControl : public frc::Command {
 public:
-	DriveWithJoystick();
-	~DriveWithJoystick();
+	GenericControl();
 	void Initialize() override;
 	void Execute() override;
 	bool IsFinished() override;
 	void End() override;
 	void Interrupted() override;
-
-private:
-	bool isReverse = false;
 };
 
-#endif

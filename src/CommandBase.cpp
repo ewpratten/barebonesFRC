@@ -1,10 +1,12 @@
 #include <CommandBase.hpp>
 #include <Subsystems/DriveTrain.hpp>
+#include <Subsystems/Generic.hpp>
 #include <Utilities/Log.hpp>
 
 // static variables in C++ have to be declared here
 // (not in the .hpp file)
 DriveTrain* CommandBase::pDriveTrain = NULL;
+Generic* CommandBase::pGeneric = NULL;
 OI* CommandBase::pOI = NULL;
 
 CommandBase::CommandBase() :
@@ -25,11 +27,16 @@ CommandBase::CommandBase() :
 		CommandBase::pDriveTrain = new DriveTrain();
 	}
 
+	if (CommandBase::pGeneric == nullptr) {
+		CommandBase::pGeneric = new Generic();
+	}
+
 	return;
 }
 
 CommandBase::~CommandBase() {
 	delete this->pDriveTrain;
+	delete this->pGeneric;
 	delete this->pOI;
 
 	return;

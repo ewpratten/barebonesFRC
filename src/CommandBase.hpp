@@ -3,6 +3,7 @@
 
 #include <OI.hpp>
 #include <Subsystems/DriveTrain.hpp>
+#include <Subsystems/Generic.hpp>
 #include <WPILib.h>
 #include "Commands/Command.h"
 
@@ -13,6 +14,7 @@ public:
 
 	static OI* pOI;
 	static DriveTrain* pDriveTrain;
+	static Generic* pGeneric;
 };
 
 #endif

@@ -76,7 +76,7 @@ private:
 	AHRS* pGyro;
 	PIDController* pTurnController;
 
-	double dTargetPostionRotations;
+	double dTargetPostionRotations = 0.00;
 	double dRotateToAngleRate;
 };
 

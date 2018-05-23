@@ -30,17 +30,27 @@ void DriveWithTriggers::Initialize() {
 void DriveWithTriggers::Execute() {
 	frc::XboxController* pJoyDrive = CommandBase::pOI->GetJoystickDrive();
 
+	if (pJoyDrive->GetXButtonReleased()) {
+		this->isReverse = !this->isReverse;
+	};
+
 	// The Y-axis goes from -1 (forward) to 1 (backwards) but we want to
 	// set motor from 1 (forward) to -1 (reverse) so multiply by -1
 	double xSpeed = pJoyDrive->GetTriggerAxis(frc::XboxController::kRightHand)
 			- pJoyDrive->GetTriggerAxis(frc::XboxController::kLeftHand);
 	double zRotation = pJoyDrive->GetX(XboxController::kLeftHand);
 
+	// Test the right bumper for setting slow mode
+	double dSlow = (pJoyDrive->GetBumper(XboxController::kRightHand)) ? 0.5 : 1;
+	// Set dReverse based on value of isReversed
+	double dReverse = (this->isReverse) ? -1 : 1;
+
 	if (fabs(zRotation) <= XBOX_DEADZONE_LEFT_JOY) {
 		zRotation = 0.0;
 	}
 
-	CommandBase::pDriveTrain->ArcadeDrive(xSpeed, zRotation);
+	CommandBase::pDriveTrain->ArcadeDrive((xSpeed * dSlow * dReverse),
+			(zRotation * dSlow));
 
 	return;
 }

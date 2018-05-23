@@ -13,6 +13,9 @@ public:
 	bool IsFinished() override;
 	void End() override;
 	void Interrupted() override;
+
+private:
+	bool isReverse = false;
 };
 
 #endif

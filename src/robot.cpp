@@ -61,6 +61,11 @@ void Robot::TeleopInit() {
 		}
 	}
 
+	if (this->pGenericControl != nullptr) {
+		this->pGenericControl->Start();
+		LOG("USE OP CONTROLLER FOR PROTOTYPING")
+	}
+
 	return;
 }
 

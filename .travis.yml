@@ -18,9 +18,6 @@ before_script:
   - mkdir CTRE
   - mkdir CTRE/include
   - cp -r ../CTRELIB/cpp/include/ctre CTRE/include
-  - cp -r ../CTRELIB/cpp/include/ctre ctre
-  - sudo cp -r ../CTRELIB/cpp/include /usr/local/include/
-  - sudo cp -r ../CTRELIB/cpp/include /usr/local/lib/
   
 script:
-  - make
+  - make competition

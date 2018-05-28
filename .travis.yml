@@ -17,8 +17,8 @@ before_script:
   - git clone https://github.com/CrossTheRoadElec/Phoenix-frc-lib.git ../CTRELIB
   - cp -r ../CTRELIB/cpp/include/ctre CTRE
   - cp -r ../CTRELIB/cpp/include/ctre ctre
-  - cp -r ../CTRELIB/cpp/include /usr/local/include/
-  - cp -r ../CTRELIB/cpp/include /usr/local/lib/
+  - sudo cp -r ../CTRELIB/cpp/include /usr/local/include/
+  - sudo cp -r ../CTRELIB/cpp/include /usr/local/lib/
   
 script:
   - make

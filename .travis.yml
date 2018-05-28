@@ -14,6 +14,8 @@ before_script:
   - touch TEAM_NAME
   - echo "5024" >> TEAM_NAME
   - touch .build/cmake_install.cmake .build/CMakeCache.txt .build/FRCUserProgram .build/Makefile
+  - git clone https://github.com/CrossTheRoadElec/Phoenix-frc-lib.git ../CTRELIB
+  - mv ../CTRELIB/cpp/include/ctre /usr/local/include/
   
 script:
   - make

@@ -15,7 +15,9 @@ before_script:
   - echo "5024" >> TEAM_NAME
   - touch .build/cmake_install.cmake .build/CMakeCache.txt .build/FRCUserProgram .build/Makefile
   - git clone https://github.com/CrossTheRoadElec/Phoenix-frc-lib.git ../CTRELIB
-  - cp -r ../CTRELIB/cpp/include/ctre CTRE
+  - mkdir CTRE
+  - mkdir CTRE/include
+  - cp -r ../CTRELIB/cpp/include/ctre CTRE/include
   - cp -r ../CTRELIB/cpp/include/ctre ctre
   - sudo cp -r ../CTRELIB/cpp/include /usr/local/include/
   - sudo cp -r ../CTRELIB/cpp/include /usr/local/lib/

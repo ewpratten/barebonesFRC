@@ -10,6 +10,10 @@ before_script:
   - git clone https://github.com/Ewpratten/barebonesFRC.git ../BBFRC
   - rm -rf ./src
   - mv ../BBFRC/src ./
+  - rm -rf TEAM_NAME
+  - touch TEAM_NAME
+  - echo "5024" >> TEAM_NAME
+  - touch .build/cmake_install.cmake .build/CMakeCache.txt .build/FRCUserProgram .build/Makefile
   
 script:
   - make

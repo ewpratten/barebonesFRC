@@ -1,0 +1,15 @@
+language: cpp
+before_script:
+  # install dependencies
+  - sudo add-apt-repository ppa:wpilib/toolchain -y
+  - sudo apt-get update -q
+  - sudo apt-get install frc-toolchain cmake
+  - sudo apt-get install wget
+  - git clone https://github.com/Team612/FRCpp_Build_Tools.git ./FRCBT
+  - cd FRCBT
+  - git clone https://github.com/Ewpratten/barebonesFRC.git ../BBFRC
+  - rm -rf ./src
+  - mv ../BBFRC/src ./
+  
+script:
+  - make

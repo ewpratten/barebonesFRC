@@ -6,9 +6,10 @@ before_script:
   - sudo apt update
   - sudo apt install gcc gdb
   - sudo apt install frc-toolchain -y
-#   - ./gradlew installToolchain
+  - ./gradlew installToolchain
   - ls -la
   - ls -la ./build
+  - cat ./build/LINUX_TOOLCHAIN_INSTALL.sh
 #   - sudo sh ./build/LINUX_TOOLCHAIN_INSTALL.sh
 script:
   - ./gradlew assemble -Ptoolchain-missing-nofail

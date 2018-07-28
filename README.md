@@ -29,3 +29,27 @@ Instructions on installing the tools can be found here: [FRC 2019 Beta](https://
 You can use the `gradlew` or `gradlew.bat` files to build, deploy, and test from commandline.
 
 ## Who Made This?
+This project is based off of the [2017](https://github.com/RaiderRobotics5024/2017Main) and [2018](Https://github.com/frc5024/PowerUp) codebases from Team [5024](Https://github.com/frc5024)
+
+The code was originally designed by:
+ - [@ewpratten](Https://github.com/ewpratten)
+ - [@slownie](Https://github.com/slownie)
+
+And was tested by:
+ - [@ewpratten](Https://github.com/ewpratten)
+ - [@slownie](Https://github.com/slownie)
+ - Andrew (non-githubber)
+ - Ethan (non-githubber)
+ - [@retrax24](Https://github.com/retrax24)
+ - [@Volxz](Https://github.com/Volxz)
+
+The OpenCv code can be found at:
+https://github.com/Ewpratten/RioCV-PI
+
+And was written by:
+ - [@ewpratten](Https://github.com/ewpratten)
+ - [@retrax24](Https://github.com/retrax24)
+
+Special thanks to our two programming mentors:
+ - [@johnlownie](https://github.com/johnlownie)
+ - [@LordMichaelmort](https://github.com/LordMichaelmort)

@@ -2,7 +2,6 @@ sudo: true
 language: cpp
 before_script:
   # install dependencies
-  - sudo apt install gcc gdb
   - ./gradlew installToolchain
   - sudo apt-add-repository ppa:wpilib/toolchain -y
   - sudo apt update

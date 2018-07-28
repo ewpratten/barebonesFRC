@@ -1,0 +1,26 @@
+See file:///home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/compileFrcUserProgramExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramExecutableFrcUserProgramCpp.
+compiling Auto.cpp successful.
+
+compiling DriveWithTriggers.cpp successful.
+
+compiling OI.cpp successful.
+
+compiling CommandBase.cpp successful.
+
+compiling GenericControl.cpp successful.
+
+compiling GenericMap.hpp successful.
+
+compiling DriveTrainMap.hpp successful.
+
+compiling RobotCFG.hpp successful.
+
+compiling DriveTrain.cpp successful.
+
+compiling robot.cpp successful.
+
+compiling Generic.cpp successful.
+
+compiling DriveWithJoystick.cpp successful.
+
+Finished compileFrcUserProgramExecutableFrcUserProgramCpp, see full log file:///home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/compileFrcUserProgramExecutableFrcUserProgramCpp/output.txt.

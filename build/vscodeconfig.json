@@ -1,0 +1,111 @@
+[
+  {
+    "name": "roborio",
+    "architecture": "arm-v7",
+    "operatingSystem": "linux",
+    "flavor": "default",
+    "buildType": "debug",
+    "cppPath": "/usr/bin/arm-frc-linux-gnueabi-g++",
+    "cPath": "/usr/bin/arm-frc-linux-gnueabi-gcc",
+    "msvc": false,
+    "systemCppMacros": [],
+    "systemCppArgs": [
+      "-pthread"
+    ],
+    "systemCMacros": [],
+    "systemCArgs": [],
+    "allLibFiles": [
+      "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/ntcore-cpp-4.1.0-headers.zip_ef19fde995210b200dcbe98c6606b60f",
+      "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/navx-cpp-3.0.348-headers.zip_b72606b41142ea0b845e4798dbc57fab",
+      "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/wpiutil-cpp-3.2.0-headers.zip_e38860479428272883648bd36a877d2e",
+      "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/hal-2018.4.1-sources.zip_ea2e95ec3cd34f692be50ac05343ec09",
+      "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/ntcore-cpp-4.1.0-sources.zip_fa367a2d5e8de6014c399e967d9cfd12",
+      "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/wpilibc-2018.4.1-sources.zip_6b5c0439c2566038f7f3fe997e45562d",
+      "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/hal-2018.4.1-headers.zip_2069345ca7860fe97bbdd26a3555dddb",
+      "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/CTRE-phoenix-cpp-5.5.1.0-headers.zip_81991b42bae0bda411ed0b321c6f683d",
+      "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/cscore-cpp-1.3.0-sources.zip_e9582e2eef564ec101638aa679215613",
+      "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/opencv-cpp-3.2.0-headers.zip_1b8591564854592a4aff6bd224b2b0a3",
+      "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/wpilibc-2018.4.1-headers.zip_8477567bc2cef26d871129801025b7ab",
+      "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/cscore-cpp-1.3.0-headers.zip_8f6bcb3fff9cb888441d0fc8b944fcdb",
+      "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/ni-libraries-2018.4.1-headers.zip_55705e66b0e6e7d3459ef1e0f179830e",
+      "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/wpiutil-cpp-3.2.0-sources.zip_0e9d75d3f14e6dfea99b800cfccbb10b"
+    ],
+    "binaries": [
+      {
+        "componentName": "frcUserProgram",
+        "sourceSets": [
+          {
+            "source": {
+              "srcDirs": [
+                "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/src/main/cpp"
+              ],
+              "includes": [],
+              "excludes": []
+            },
+            "exportedHeaders": {
+              "srcDirs": [
+                "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/src/main/include"
+              ],
+              "includes": [],
+              "excludes": []
+            },
+            "cpp": true,
+            "args": [
+              "-std\u003dc++1y",
+              "-g"
+            ],
+            "macros": []
+          }
+        ],
+        "libHeaders": [
+          "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/ntcore-cpp-4.1.0-headers.zip_ef19fde995210b200dcbe98c6606b60f",
+          "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/wpilibc-2018.4.1-headers.zip_8477567bc2cef26d871129801025b7ab",
+          "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/navx-cpp-3.0.348-headers.zip_b72606b41142ea0b845e4798dbc57fab",
+          "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/wpiutil-cpp-3.2.0-headers.zip_e38860479428272883648bd36a877d2e",
+          "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/cscore-cpp-1.3.0-headers.zip_8f6bcb3fff9cb888441d0fc8b944fcdb",
+          "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/hal-2018.4.1-headers.zip_2069345ca7860fe97bbdd26a3555dddb",
+          "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/CTRE-phoenix-cpp-5.5.1.0-headers.zip_81991b42bae0bda411ed0b321c6f683d",
+          "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/opencv-cpp-3.2.0-headers.zip_1b8591564854592a4aff6bd224b2b0a3",
+          "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/expandedArchives/ni-libraries-2018.4.1-headers.zip_55705e66b0e6e7d3459ef1e0f179830e"
+        ]
+      }
+    ],
+    "sourceBinaries": [
+      {
+        "source": {
+          "srcDirs": [
+            "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/src/main/include"
+          ],
+          "includes": [],
+          "excludes": []
+        },
+        "componentName": "frcUserProgram",
+        "cpp": true,
+        "args": [
+          "-std\u003dc++1y",
+          "-g"
+        ],
+        "macros": []
+      },
+      {
+        "source": {
+          "srcDirs": [
+            "/home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/src/main/cpp"
+          ],
+          "includes": [],
+          "excludes": []
+        },
+        "componentName": "frcUserProgram",
+        "cpp": true,
+        "args": [
+          "-std\u003dc++1y",
+          "-g"
+        ],
+        "macros": []
+      }
+    ],
+    "nameBinaryMap": {
+      "frcUserProgram": 0
+    }
+  }
+]

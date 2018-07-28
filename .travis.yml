@@ -4,10 +4,10 @@ before_script:
   # install dependencies
   - sudo add-apt-repository ppa:wpilib/toolchain -y
   - sudo apt-get update -q
-  - sudo apt-get install frc-toolchain cmake
+  - sudo apt-get install frc-toolchain
   - ./gradlew installToolchain
   - ls -la
   - ls -la ./build
-  - sudo ./build/LINUX_TOOLCHAIN_INSTALL.sh
+  - sudo sh ./build/LINUX_TOOLCHAIN_INSTALL.sh
 script:
   - ./gradlew

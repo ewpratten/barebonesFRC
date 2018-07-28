@@ -4,7 +4,8 @@ before_script:
   # install dependencies
   - sudo apt-add-repository ppa:wpilib/toolchain -y
   - sudo apt update
-  - sudo apt install frc-toolchain -y
+  - sudo apt install gcc gdb
+  - sudo apt install frc-toolchain gcc-frc-armel-cross -y
 #   - ./gradlew installToolchain
   - ls -la
   - ls -la ./build

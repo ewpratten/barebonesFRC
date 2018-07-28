@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: ubuntu:16.04
+    steps:
+      - checkout
+      - run:
+          name: Get Toolchain ppa
+          command: apt-add-repository ppa:wpilib/toolchain -y && apt update
+      - run:
+          name: Get Toolchain
+          command: apt install frc-toolchain -y
+      - run:
+          name: Build
+          command: ./gradlew assemble

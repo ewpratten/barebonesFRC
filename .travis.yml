@@ -10,4 +10,4 @@ before_script:
   - ls -la ./build
 #   - sudo sh ./build/LINUX_TOOLCHAIN_INSTALL.sh
 script:
-  - ./gradlew -Ptoolchain-missing-nofail
+  - ./gradlew assemble -Ptoolchain-missing-nofail

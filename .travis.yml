@@ -2,14 +2,14 @@ sudo: true
 language: cpp
 before_script:
   # install dependencies
+  - sudo apt install gcc gdb
+  - ./gradlew installToolchain
   - sudo apt-add-repository ppa:wpilib/toolchain -y
   - sudo apt update
-  - sudo apt install gcc gdb
   - sudo apt install frc-toolchain -y
-  - ./gradlew installToolchain
   - ls -la
   - ls -la ./build
-  - cat ./build/LINUX_TOOLCHAIN_INSTALL.sh
+#   - cat ./build/LINUX_TOOLCHAIN_INSTALL.sh
 #   - sudo sh ./build/LINUX_TOOLCHAIN_INSTALL.sh
 script:
-  - ./gradlew assemble -Ptoolchain-missing-nofail
+  - ./gradlew assemble

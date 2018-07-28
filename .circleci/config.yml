@@ -5,7 +5,9 @@ jobs:
       - image: ubuntu:16.04
     steps:
       - checkout
-      - run: apt update && sudo apt install software-properties-common python-software-properties
+      - run: 
+          name: Get apt-add-repository
+          command: apt update && apt install software-properties-common python-software-properties
       - run:
           name: Get Toolchain ppa
           command: apt-add-repository ppa:wpilib/toolchain -y && apt update

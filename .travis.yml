@@ -1,3 +1,4 @@
+sudo: true
 language: cpp
 before_script:
   # install dependencies
@@ -5,5 +6,6 @@ before_script:
   - sudo apt-get update -q
   - sudo apt-get install frc-toolchain cmake
   - ./gradlew installToolchain
+  - sudo ./build/LINUX_TOOLCHAIN_INSTALL.sh
 script:
   - ./gradlew

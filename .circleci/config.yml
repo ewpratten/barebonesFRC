@@ -16,7 +16,7 @@ jobs:
           command: apt install frc-toolchain -y
       - run:
           name: Get OpenJDK
-          command: apt install openjdk-11 -y
+          command: apt install default-jdk -y
       - run:
           name: Build
           command: ./gradlew assemble

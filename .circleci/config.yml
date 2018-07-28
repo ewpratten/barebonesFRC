@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run: 
           name: Get apt-add-repository
-          command: apt update && apt install software-properties-common python-software-properties
+          command: apt update && apt install software-properties-common python-software-properties -y
       - run:
           name: Get Toolchain ppa
           command: apt-add-repository ppa:wpilib/toolchain -y && apt update

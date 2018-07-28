@@ -48,6 +48,8 @@ void DriveWithTriggers::Execute() {
 	if (fabs(zRotation) <= XBOX_DEADZONE_LEFT_JOY) {
 		zRotation = 0.0;
 	}
+	
+	// cv goes here
 
 	CommandBase::pDriveTrain->ArcadeDrive((xSpeed * dSlow * dReverse),
 			(zRotation * dSlow));

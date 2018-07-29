@@ -1,10 +1,4 @@
 See file:///home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/build/tmp/compileFrcUserProgramExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramExecutableFrcUserProgramCpp.
-compiling Auto.cpp successful.
-
-compiling OI.cpp successful.
-
-compiling CommandBase.cpp successful.
-
 compiling DriveWithTriggers.cpp successful.
 /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/cpp/Commands/DriveWithTriggers.cpp: In member function 'virtual void DriveWithTriggers::Initialize()':
 /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/cpp/Commands/DriveWithTriggers.cpp:30:24: warning: 'static std::shared_ptr<nt::NetworkTable> nt::NetworkTable::GetTable(llvm::StringRef)' is deprecated: use NetworkTableInstance::GetTable() or NetworkTableInstance::GetEntry() instead [-Wdeprecated-declarations]
@@ -31,22 +25,6 @@ In file included from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/build/tmp/ex
 /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/build/tmp/expandedArchives/ntcore-cpp-4.1.0-headers.zip_ef19fde995210b200dcbe98c6606b60f/networktables/NetworkTable.h:277:40: note: declared here
    static std::shared_ptr<NetworkTable> GetTable(StringRef key);
                                         ^
-
-compiling GenericControl.cpp successful.
-
-compiling GenericMap.hpp successful.
-
-compiling DriveTrainMap.hpp successful.
-
-compiling Generic.cpp successful.
-
-compiling RobotCFG.hpp successful.
-
-compiling DriveTrain.cpp successful.
-
-compiling robot.cpp successful.
-
-compiling CVServer.cpp successful.
 
 compiling DriveWithJoystick.cpp successful.
 /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/cpp/Commands/DriveWithJoystick.cpp: In member function 'virtual void DriveWithJoystick::Initialize()':

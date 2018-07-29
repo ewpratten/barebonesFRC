@@ -59,7 +59,7 @@ void DriveWithTriggers::Execute() {
 	zRotation = (zRotation * dSlow);
 
 	// If the vision mode is enabled, get info from table and store in vars
-	if(Vision){
+	if(Vision && pJoyDrive->GetBButton()){
 		double Speed, Rotation;
 		std::tie(Speed, Rotation) = GetMotorSpeeds(table);
 		xSpeed = Speed;

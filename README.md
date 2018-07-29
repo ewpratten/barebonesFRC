@@ -24,6 +24,7 @@ Currently, the answer is **Don't**. We haven't had the time to document it and i
 
 ## Why Does the Project Look Weird?
 *This section will be outdated as of January 6 2019*
+
 This is the first public project ever (I think) to use the FRC 2019 Toolchain, Build system, and vscode plugin.
 
 Instructions on installing the tools can be found here: [FRC 2019 Beta](https://wpilib.screenstepslive.com/s/currentCS/m/79833/c/259485)

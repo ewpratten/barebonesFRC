@@ -1,11 +1,36 @@
-See file:///home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/compileFrcUserProgramExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramExecutableFrcUserProgramCpp.
+See file:///home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/build/tmp/compileFrcUserProgramExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramExecutableFrcUserProgramCpp.
 compiling Auto.cpp successful.
-
-compiling DriveWithTriggers.cpp successful.
 
 compiling OI.cpp successful.
 
 compiling CommandBase.cpp successful.
+
+compiling DriveWithTriggers.cpp successful.
+/home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/cpp/Commands/DriveWithTriggers.cpp: In member function 'virtual void DriveWithTriggers::Initialize()':
+/home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/cpp/Commands/DriveWithTriggers.cpp:30:24: warning: 'static std::shared_ptr<nt::NetworkTable> nt::NetworkTable::GetTable(llvm::StringRef)' is deprecated: use NetworkTableInstance::GetTable() or NetworkTableInstance::GetEntry() instead [-Wdeprecated-declarations]
+  table = NetworkTable::GetTable("SmartDashboard");
+                        ^
+In file included from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/build/tmp/expandedArchives/wpilibc-2018.4.1-headers.zip_8477567bc2cef26d871129801025b7ab/Buttons/NetworkButton.h:13:0,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/build/tmp/expandedArchives/wpilibc-2018.4.1-headers.zip_8477567bc2cef26d871129801025b7ab/WPILib.h:24,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/include/OI.hpp:4,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/include/CommandBase.hpp:4,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/include/Commands/DriveWithTriggers.hpp:4,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/cpp/Commands/DriveWithTriggers.cpp:1:
+/home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/build/tmp/expandedArchives/ntcore-cpp-4.1.0-headers.zip_ef19fde995210b200dcbe98c6606b60f/networktables/NetworkTable.h:277:40: note: declared here
+   static std::shared_ptr<NetworkTable> GetTable(StringRef key);
+                                        ^
+/home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/cpp/Commands/DriveWithTriggers.cpp:30:49: warning: 'static std::shared_ptr<nt::NetworkTable> nt::NetworkTable::GetTable(llvm::StringRef)' is deprecated: use NetworkTableInstance::GetTable() or NetworkTableInstance::GetEntry() instead [-Wdeprecated-declarations]
+  table = NetworkTable::GetTable("SmartDashboard");
+                                                 ^
+In file included from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/build/tmp/expandedArchives/wpilibc-2018.4.1-headers.zip_8477567bc2cef26d871129801025b7ab/Buttons/NetworkButton.h:13:0,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/build/tmp/expandedArchives/wpilibc-2018.4.1-headers.zip_8477567bc2cef26d871129801025b7ab/WPILib.h:24,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/include/OI.hpp:4,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/include/CommandBase.hpp:4,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/include/Commands/DriveWithTriggers.hpp:4,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/cpp/Commands/DriveWithTriggers.cpp:1:
+/home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/build/tmp/expandedArchives/ntcore-cpp-4.1.0-headers.zip_ef19fde995210b200dcbe98c6606b60f/networktables/NetworkTable.h:277:40: note: declared here
+   static std::shared_ptr<NetworkTable> GetTable(StringRef key);
+                                        ^
 
 compiling GenericControl.cpp successful.
 
@@ -13,14 +38,41 @@ compiling GenericMap.hpp successful.
 
 compiling DriveTrainMap.hpp successful.
 
+compiling Generic.cpp successful.
+
 compiling RobotCFG.hpp successful.
 
 compiling DriveTrain.cpp successful.
 
 compiling robot.cpp successful.
 
-compiling Generic.cpp successful.
+compiling CVServer.cpp successful.
 
 compiling DriveWithJoystick.cpp successful.
+/home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/cpp/Commands/DriveWithJoystick.cpp: In member function 'virtual void DriveWithJoystick::Initialize()':
+/home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/cpp/Commands/DriveWithJoystick.cpp:29:24: warning: 'static std::shared_ptr<nt::NetworkTable> nt::NetworkTable::GetTable(llvm::StringRef)' is deprecated: use NetworkTableInstance::GetTable() or NetworkTableInstance::GetEntry() instead [-Wdeprecated-declarations]
+  table = NetworkTable::GetTable("SmartDashboard");
+                        ^
+In file included from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/build/tmp/expandedArchives/wpilibc-2018.4.1-headers.zip_8477567bc2cef26d871129801025b7ab/Buttons/NetworkButton.h:13:0,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/build/tmp/expandedArchives/wpilibc-2018.4.1-headers.zip_8477567bc2cef26d871129801025b7ab/WPILib.h:24,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/include/OI.hpp:4,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/include/CommandBase.hpp:4,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/include/Commands/DriveWithJoystick.hpp:4,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/cpp/Commands/DriveWithJoystick.cpp:1:
+/home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/build/tmp/expandedArchives/ntcore-cpp-4.1.0-headers.zip_ef19fde995210b200dcbe98c6606b60f/networktables/NetworkTable.h:277:40: note: declared here
+   static std::shared_ptr<NetworkTable> GetTable(StringRef key);
+                                        ^
+/home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/cpp/Commands/DriveWithJoystick.cpp:29:49: warning: 'static std::shared_ptr<nt::NetworkTable> nt::NetworkTable::GetTable(llvm::StringRef)' is deprecated: use NetworkTableInstance::GetTable() or NetworkTableInstance::GetEntry() instead [-Wdeprecated-declarations]
+  table = NetworkTable::GetTable("SmartDashboard");
+                                                 ^
+In file included from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/build/tmp/expandedArchives/wpilibc-2018.4.1-headers.zip_8477567bc2cef26d871129801025b7ab/Buttons/NetworkButton.h:13:0,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/build/tmp/expandedArchives/wpilibc-2018.4.1-headers.zip_8477567bc2cef26d871129801025b7ab/WPILib.h:24,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/include/OI.hpp:4,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/include/CommandBase.hpp:4,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/include/Commands/DriveWithJoystick.hpp:4,
+                 from /home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/src/main/cpp/Commands/DriveWithJoystick.cpp:1:
+/home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/build/tmp/expandedArchives/ntcore-cpp-4.1.0-headers.zip_ef19fde995210b200dcbe98c6606b60f/networktables/NetworkTable.h:277:40: note: declared here
+   static std::shared_ptr<NetworkTable> GetTable(StringRef key);
+                                        ^
 
-Finished compileFrcUserProgramExecutableFrcUserProgramCpp, see full log file:///home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/compileFrcUserProgramExecutableFrcUserProgramCpp/output.txt.
+Finished compileFrcUserProgramExecutableFrcUserProgramCpp, see full log file:///home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/build/tmp/compileFrcUserProgramExecutableFrcUserProgramCpp/output.txt.

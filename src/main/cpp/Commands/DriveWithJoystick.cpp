@@ -2,6 +2,9 @@
 #include <math.h>
 #include <Utilities/Log.hpp>
 #include "../RobotCFG.hpp"
+#include <ntcore.h>
+#include <networktables/NetworkTableInstance.h>
+#include <Subsystems/CVServer.hpp>
 
 DriveWithJoystick::DriveWithJoystick() {
 	LOG("[DriveWithJoystick] Constructed");
@@ -23,7 +26,7 @@ DriveWithJoystick::~DriveWithJoystick() {
 
 void DriveWithJoystick::Initialize() {
 	LOG("[DriveWithJoystick] Initialized");
-
+	table = NetworkTable::GetTable("SmartDashboard");
 	this->isReverse = false;
 
 	return;
@@ -52,8 +55,20 @@ void DriveWithJoystick::Execute() {
 		zRotation = 0.0;
 	}
 
-	CommandBase::pDriveTrain->ArcadeDrive((xSpeed * dSlow * dReverse),
-			(zRotation * dSlow));
+	// Calculate final speed and rotation
+	xSpeed = (xSpeed * dSlow * dReverse);
+	zRotation = (zRotation * dSlow);
+
+	// If the vision mode is enabled, get info from table and store in vars
+	if(Vision){
+		double Speed, Rotation;
+		std::tie(Speed, Rotation) = GetMotorSpeeds(table);
+		xSpeed = Speed;
+		zRotation = Rotation;
+	}
+
+	// This is the drive stuff
+	CommandBase::pDriveTrain->ArcadeDrive(xSpeed, zRotation);
 
 	return;
 }

@@ -1,4 +1,4 @@
-See file:///home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/linkFrcUserProgramExecutable/output.txt for all output for linkFrcUserProgramExecutable.
+See file:///home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/build/tmp/linkFrcUserProgramExecutable/output.txt for all output for linkFrcUserProgramExecutable.
 linking frcUserProgram successful.
 
-Finished linkFrcUserProgramExecutable, see full log file:///home/ewpratten/FRC/BBFRC-2019/BarebonesFRC/build/tmp/linkFrcUserProgramExecutable/output.txt.
+Finished linkFrcUserProgramExecutable, see full log file:///home/ewpratten/FRC/BBFRC-2019/g/barebonesFRC/build/tmp/linkFrcUserProgramExecutable/output.txt.

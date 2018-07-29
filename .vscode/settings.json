@@ -13,5 +13,8 @@
   },
   "C_Cpp.default.configurationProvider": "vscode-wpilib",
   "wpilib.online": true,
-  "C_Cpp.configurationWarnings": "Disabled"
+  "C_Cpp.configurationWarnings": "Disabled",
+  "files.associations": {
+    "tuple": "cpp"
+  }
 }

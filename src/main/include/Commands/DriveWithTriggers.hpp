@@ -16,6 +16,7 @@ public:
 
 private:
 	bool isReverse = false;
+	std::shared_ptr<NetworkTable> table;
 };
 
 #endif

@@ -2,6 +2,7 @@
 #include <string>
 #include "RobotCFG.hpp"
 #include <Utilities/Log.hpp>
+#include <cscore.h>
 
 Robot::~Robot() {
 	delete this->pDriveWithJoystick;
@@ -19,6 +20,13 @@ void Robot::RobotInit() {
 	// initialize the commands
 	this->pDriveWithJoystick = new DriveWithJoystick();
 	this->pDriveWithTriggers = new DriveWithTriggers();
+
+	if(Camera_Server){
+		LOG("CSCORE INIT");
+		CameraServer::GetInstance()->StartAutomaticCapture();
+	}else{
+		LOG("CSCORE not running due to config setting");
+	}
 
 	return;
 }
@@ -51,6 +59,7 @@ void Robot::AutonomousPeriodic() {
 void Robot::TeleopInit() {
 	LOG("[Robot] Teleop Initialized");
 
+	// If Joydrive setting is enabled, use joystick drive, else use trigger drive
 	if (JoyDrive == true) {
 		if (this->pDriveWithJoystick != nullptr) {
 			this->pDriveWithJoystick->Start();

@@ -20,7 +20,20 @@ I \([@ewpratten](Https://github.com/ewpratten)\) have been observing comments an
 Now.. To address all those side-notes. The reason I say simple-ish is because the code is really just a super stripped down (and updated) version of: [5024 PowerUp](Https://github.com/frc5024/PowerUp). The code could be a lot smaller and more efficent (we are working on the efficency part) but I ran out of time to test the code because school finished. This codebase can not be used by all teams because **1.** It is written in c++. Not java or python. and **2.** Currently, the only supported ESC is the Talon SRX.
 
 ## How do I Use This OpenCV Server?
-Currently, the answer is **Don't**. We haven't had the time to document it and it needs some rewriting. Just don't touch the `camx` and `fspeed` vars in NetworkTables and everything should be fine. (also, unbind the **B** button in the code)
+Using the OpenCV Server is quite simple.
+
+The "server" (more like an api) is designed to let you build whatever off-board vision code you want using any tools you want! Just plug a webcam in to the rio then follow these steps:
+ - Make sure that both `Vision` and `Camera_Server` are equal to **true** in `RobotCFG.hpp`
+ - Reboot the RIO
+ - Connect your off-board device to the wifi or ethernet network
+ - In your vision code on the device, set your camera feed to get video (mJPG stream) from http://10.TE.AM.2:1181/stream.mjpg (Replace TE.AM with your team number. for example, 50.24)
+ - Use one of the many NetworkTables libraries (Like [this](https://github.com/robotpy/pynetworktables) one) to send your output motor speeds to the robot
+ - Send the forward speed through `cvserv_speed`
+ - Send the rotation through `cvserv_rotation`
+ - Hold the **B** button on your controller during teleop and the robot will be fully controlled by your off-board code
+ - Feel free to send sensor data through NetworkTables too!
+
+If you would like an example of some off-board vision code, or are too lazy to write it yourself, check out my repo called [RIOCV-PI](https://github.com/Ewpratten/RioCV-PI) for some vision code that follows a PowerUp cube.
 
 ## Why Does the Project Look Weird?
 *This section will be outdated as of January 6 2019*
@@ -30,6 +43,9 @@ This is the first public project ever (I think) to use the FRC 2019 Toolchain, B
 Instructions on installing the tools can be found here: [FRC 2019 Beta](https://wpilib.screenstepslive.com/s/currentCS/m/79833/c/259485)
 
 You can use the `gradlew` or `gradlew.bat` files to build, deploy, and test from commandline.
+
+## How Did You Set Up CI?
+More info on that can be found over at my [CI For FRC](https://github.com/Ewpratten/FRC-CI) repo.
 
 ## Who Made This?
 This project is based off of the [2017](https://github.com/RaiderRobotics5024/2017Main) and [2018](Https://github.com/frc5024/PowerUp) codebases from Team [5024](Https://github.com/frc5024)

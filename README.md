@@ -69,6 +69,6 @@ And was written by:
  - [@ewpratten](Https://github.com/ewpratten)
  - [@retrax24](Https://github.com/retrax24)
 
-Special thanks to our two programming mentors:
+Special thanks to our two awesome programming mentors:
  - [@johnlownie](https://github.com/johnlownie)
  - [@LordMichaelmort](https://github.com/LordMichaelmort)

@@ -1,10 +1,11 @@
-#include <Robot.hpp>
-#include <string>
-#include "RobotCFG.hpp"
-#include <Utilities/Log.hpp>
-#include <cscore.h>
+// Include required files
+#include <Robot.hpp>			// Robot header file (containes includes for all other files)
+#include "RobotCFG.hpp"			// Robot-wide configuration file
+#include <Utilities/Log.hpp>	// LOG tool. Used for printing to the RIOlog console
 
+// Robot Destructor
 Robot::~Robot() {
+	// Delete command pointers
 	delete this->pDriveWithJoystick;
 	delete this->pDriveWithTriggers;
 
@@ -14,14 +15,17 @@ Robot::~Robot() {
 	return;
 }
 
+// Robot Initialization
 void Robot::RobotInit() {
 	LOG("[Robot] Initialized");
 
-	// initialize the commands
+	// Initialize the drive commands
 	this->pDriveWithJoystick = new DriveWithJoystick();
 	this->pDriveWithTriggers = new DriveWithTriggers();
 
-	if(Camera_Server){
+
+	if(Camera_Server){ // If the Camera_server setting is set in RobotCFG.
+		// Initialize the camera server
 		LOG("CSCORE INIT");
 		CameraServer::GetInstance()->StartAutomaticCapture();
 	}else{
@@ -56,6 +60,7 @@ void Robot::AutonomousPeriodic() {
 	return;
 }
 
+// Robot Teleop Initialization
 void Robot::TeleopInit() {
 	LOG("[Robot] Teleop Initialized");
 
@@ -70,15 +75,18 @@ void Robot::TeleopInit() {
 		}
 	}
 
+	// Use Generic Control to control other on-board motors
 	if (this->pGenericControl != nullptr) {
 		this->pGenericControl->Start();
 		LOG("USE OP CONTROLLER FOR PROTOTYPING")
 	}
+	// Replace above with commands for other hardware controlls
 
 	return;
 }
 
 void Robot::TeleopPeriodic() {
+	// Run Teleop
 	frc::Scheduler::GetInstance()->Run();
 
 	return;

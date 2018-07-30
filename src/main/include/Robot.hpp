@@ -1,13 +1,14 @@
 #ifndef _ROBOT_HG_
 #define _ROBOT_HG_
 
-#include <WPILib.h>
-#include <Commands/Command.h>
-#include <Commands/DriveWithJoystick.hpp>
-#include <Commands/DriveWithTriggers.hpp>
-#include <Commands/GenericControl.hpp>
-#include <Commands/Scheduler.h>
-#include <SmartDashboard/SendableChooser.h>
+// Include required files
+#include <WPILib.h>							// Wpilib Toolsuite
+#include <Commands/Command.h>				// Wpilib Command handler
+#include <Commands/DriveWithJoystick.hpp>	// DriveWithJoystick
+#include <Commands/DriveWithTriggers.hpp>	// DriveWithTriggers
+#include <Commands/GenericControl.hpp>		// GenericControl
+#include <Commands/Scheduler.h>				// Command Scheduler
+#include <SmartDashboard/SendableChooser.h>	// Wpilib Smartdashboard Auto Selection
 
 class Robot: public frc::TimedRobot {
 public:
@@ -31,6 +32,7 @@ public:
 private:
 	int GetAutoType();
 
+	// Declare Vars
 	frc::SendableChooser<int> scRobotPosition;
 	frc::SendableChooser<int> scRobotRole;
 	frc::SendableChooser<int> scOverrideAuto;

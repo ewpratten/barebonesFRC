@@ -1,3 +1,6 @@
+
+//This file contains all of the configurations / settings for the robot
+
 #ifndef SRC_ROBOTCFG_HPP_
 #define SRC_ROBOTCFG_HPP_
 

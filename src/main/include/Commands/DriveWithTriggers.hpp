@@ -1,11 +1,17 @@
 #ifndef _DRIVEWITHTRIGGERS_HG_
 #define _DRIVEWITHTRIGGERS_HG_
 
-#include <CommandBase.hpp>
-#include <WPILib.h>
+// Include Required Files
+#include <CommandBase.hpp>						// Wpilib CommandBase
+#include <WPILib.h>								// Wpilib
+#include <ntcore.h>								// Wpilib NetworkTables Core Lib
+#include <networktables/NetworkTableInstance.h>	// Wpilib NetworkTables
+#include <Subsystems/CVServer.hpp>				// NetworkTables-Based Control Server
+#include <tuple>							// STD tuple Lib
 
 class DriveWithTriggers: public CommandBase {
 public:
+	// Functions
 	DriveWithTriggers();
 	~DriveWithTriggers();
 	void Initialize() override;
@@ -15,6 +21,7 @@ public:
 	void Interrupted() override;
 
 private:
+	// Define Vars
 	bool isReverse = false;
 	std::shared_ptr<NetworkTable> table;
 };

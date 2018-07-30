@@ -59,6 +59,7 @@ And was tested by:
  - [@slownie](Https://github.com/slownie)
  - Andrew (non-githubber)
  - Ethan (non-githubber)
+ - Josh (non-githubber)
  - [@retrax24](Https://github.com/retrax24)
  - [@Volxz](Https://github.com/Volxz)
 

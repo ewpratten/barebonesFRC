@@ -1,5 +1,5 @@
 # BarebonesFRC
-[![CircleCI](https://circleci.com/gh/Ewpratten/barebonesFRC/tree/master.svg?style=svg)](https://circleci.com/gh/Ewpratten/barebonesFRC/tree/master)
+[![CircleCI](https://circleci.com/gh/Ewpratten/barebonesFRC/tree/master.svg?style=svg)](https://circleci.com/gh/Ewpratten/barebonesFRC/tree/master) [![DOI](https://zenodo.org/badge/132483654.svg)](https://zenodo.org/badge/latestdoi/132483654)
 
 A barebones-ish codebase written in c++ to quickly get a robot driving
 

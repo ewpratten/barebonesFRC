@@ -26,4 +26,4 @@ For a change to pass the checklist, it must:
  - successfully build on the test server (we use circleci)
  - be able to work correctly 10 times in a row on both robots (this may be skipped with a mentor's permission during competitions)
  - if it contains any ARM or x86 assembly code, you must be able to prove that it will not segfault or coredump during operation
- - if it is computer vision related, 
+ - if it is computer vision related, the code must be able to cunction correctly under "competition stress" (bright lights, camera flashes, loud noise, vibrations, human error)

@@ -1,0 +1,13 @@
+---
+BasedOnStyle: Chromium
+AlignAfterOpenBracket: Align
+AlignTrailingComments: 'true'
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: 'true'
+AlwaysBreakBeforeMultilineStrings: 'false'
+ColumnLimit: '100'
+Language: Cpp
+SortIncludes: 'true'
+SpaceBeforeParens: Never
+
+...

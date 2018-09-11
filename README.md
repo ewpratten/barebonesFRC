@@ -44,6 +44,8 @@ Instructions on installing the tools can be found here: [FRC 2019 Beta](https://
 
 You can use the `gradlew` or `gradlew.bat` files to build, deploy, and test from commandline.
 
+For 5024 members, more info can be found in our internal docs.
+
 ## How Did You Set Up CI?
 More info on that can be found over at my [CI For FRC](https://github.com/Ewpratten/FRC-CI) repo.
 
@@ -62,6 +64,7 @@ And was tested by:
  - Josh (non-githubber)
  - [@retrax24](Https://github.com/retrax24)
  - [@Volxz](Https://github.com/Volxz)
+ - Nick (non-githubber)
 
 The OpenCv code can be found at:
 https://github.com/Ewpratten/RioCV-PI

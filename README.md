@@ -35,6 +35,8 @@ The "server" (more like an api) is designed to let you build whatever off-board 
 
 If you would like an example of some off-board vision code, or are too lazy to write it yourself, check out my repo called [RIOCV-PI](https://github.com/Ewpratten/RioCV-PI) for some vision code that follows a PowerUp cube.
 
+**Note for 5024 members:** untill we set up cameras on the robot, and have a co-prosessor set up, our master branch **must** have this feature disabled.
+
 ## Why Does the Project Look Weird?
 *This section will be outdated as of January 6 2019*
 

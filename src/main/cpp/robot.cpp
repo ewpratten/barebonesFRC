@@ -64,6 +64,10 @@ void Robot::AutonomousPeriodic() {
 void Robot::TeleopInit() {
 	LOG("[Robot] Teleop Initialized");
 
+	if(this->pShiftGears != nullptr) {
+		this->pShiftGears->Start();
+	}
+	
 	// If Joydrive setting is enabled, use joystick drive, else use trigger drive
 	if (JoyDrive == true) {
 		if (this->pDriveWithJoystick != nullptr) {

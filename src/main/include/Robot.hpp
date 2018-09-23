@@ -32,13 +32,13 @@ public:
 	GenericControl* pGenericControl;				//!< A pointer the contains the GenericControl class
 
 private:
-	int GetAutoType();
+	int GetAutoType();	//!< Returns the auto type to run based on data from the FMS and Driverstation
 
 	// Declare Vars
-	frc::SendableChooser<int> scRobotPosition;
-	frc::SendableChooser<int> scRobotRole;
-	frc::SendableChooser<int> scOverrideAuto;
-	frc::Command* pAutonomousCommand;
+	frc::SendableChooser<int> scRobotPosition;	//!< Stores the robot's position from the smartdashboard
+	frc::SendableChooser<int> scRobotRole;			//!< Stores the auto mode set by the drivers
+	frc::SendableChooser<int> scOverrideAuto;		//!< Stores weather or not to override the normal auto sequence
+	frc::Command* pAutonomousCommand;						//!< Stores the auto command to be run
 
 };
 

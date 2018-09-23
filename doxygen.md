@@ -1,0 +1,1 @@
+To see the documentation, go to the **Classes** tab. Or take a look at the github repo

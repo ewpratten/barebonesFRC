@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['generic',['Generic',['../classGeneric.html#a0cffb786c5d69dac1798256479e47134',1,'Generic']]],
+  ['genericcontrol',['GenericControl',['../classGenericControl.html#a5cf81a156483a4c5661c57c67c8b5eaf',1,'GenericControl']]],
+  ['getangle',['GetAngle',['../classDriveTrain.html#a065ac0d8097bfd65be29f12851226c17',1,'DriveTrain']]],
+  ['getautotype',['GetAutoType',['../classRobot.html#af621ad25f1be17223cdd5c217ab98410',1,'Robot']]],
+  ['getjoystickdrive',['GetJoystickDrive',['../classOI.html#a9facc170b5ac69ea63eda4ceabe4d12e',1,'OI']]],
+  ['getjoystickoperator',['GetJoystickOperator',['../classOI.html#a41cf0361ed435447b69562e79addf35c',1,'OI']]],
+  ['getleftclosedlooperror',['GetLeftClosedLoopError',['../classDriveTrain.html#a739cbcbaae4cb8ef6d412270b8f95d4e',1,'DriveTrain']]],
+  ['getleftdistance',['GetLeftDistance',['../classDriveTrain.html#a8bc2914cb362f16c3b33e4fef16973c7',1,'DriveTrain']]],
+  ['getleftfrontmotor',['GetLeftFrontMotor',['../classDriveTrain.html#a3061f4f619f5a48306f782fae83b1925',1,'DriveTrain']]],
+  ['getleftposition',['GetLeftPosition',['../classDriveTrain.html#a7ef0d514f2e66552b3b1ef8e8d83ab10',1,'DriveTrain']]],
+  ['getleftvelocity',['GetLeftVelocity',['../classDriveTrain.html#a382206f1169015f82606967c05003947',1,'DriveTrain']]],
+  ['getrightclosedlooperror',['GetRightClosedLoopError',['../classDriveTrain.html#a09d97a096a5595a8d841ebae1c80b653',1,'DriveTrain']]],
+  ['getrightdistance',['GetRightDistance',['../classDriveTrain.html#a28c4f51ecbf93c6aaaddc9f2ddd91aed',1,'DriveTrain']]],
+  ['getrightfrontmotor',['GetRightFrontMotor',['../classDriveTrain.html#a38e56780d21bbb3b7fae1aec4fd0141b',1,'DriveTrain']]],
+  ['getrightposition',['GetRightPosition',['../classDriveTrain.html#a71c233b57d57e20da34f8bfba2ebbc37',1,'DriveTrain']]],
+  ['getrightvelocity',['GetRightVelocity',['../classDriveTrain.html#a4a11435b923531ce19303416ea266514',1,'DriveTrain']]],
+  ['getrotatetoanglerate',['GetRotateToAngleRate',['../classDriveTrain.html#a6b94c5f62d68a15619c4f9480210e9dc',1,'DriveTrain']]],
+  ['gettargetposition',['GetTargetPosition',['../classDriveTrain.html#a0827e0ca219f7297d65e8a659cf84316',1,'DriveTrain']]]
+];

@@ -1,3 +1,5 @@
+//! The main robot class that is called by the RoboRIO
+
 #ifndef _ROBOT_HG_
 #define _ROBOT_HG_
 
@@ -13,21 +15,21 @@
 class Robot: public frc::TimedRobot {
 public:
 	// Robot Positions
-	~Robot();
-	void RobotInit() override;
-	void DisabledInit() override;
-	void DisabledPeriodic() override;
-	void AutonomousInit() override;
-	void AutonomousPeriodic() override;
-	void TeleopInit() override;
-	void TeleopPeriodic() override;
-	void TestInit() override;
-	void TestPeriodic() override;
+	~Robot(); 													//!< The class destructor
+	void RobotInit() override;					//!< This code is run when the robot boots up
+	void DisabledInit() override; 			//!< This code runs once as soon as the robot is disabled
+	void DisabledPeriodic() override; 	//!< This code is run in a loop while the robot is disabled
+	void AutonomousInit() override;			//!< This code is run once at the very begining of auto
+	void AutonomousPeriodic() override;	//!< This code is run in a loop during auto
+	void TeleopInit() override;					//!< This code is run once at the very beginning of teleop
+	void TeleopPeriodic() override;			//!< This code is run in a loop suring teleop
+	void TestInit() override;						//!< This code is run once at the very benining of test mode
+	void TestPeriodic() override;				//!< This code is run in a loop during test mode
 
 	// declare the commands
-	DriveWithJoystick* pDriveWithJoystick;
-	DriveWithTriggers* pDriveWithTriggers;
-	GenericControl* pGenericControl;
+	DriveWithJoystick* pDriveWithJoystick;	//!< A pointer that contains the DriveWithJoystick class
+	DriveWithTriggers* pDriveWithTriggers;	//!< A pointer that contains the DriveWithJoystick class
+	GenericControl* pGenericControl;				//!< A pointer the contains the GenericControl class
 
 private:
 	int GetAutoType();

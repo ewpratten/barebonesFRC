@@ -72,6 +72,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>The main robot class that is called by the RoboRIO.  
+ <a href="classRobot.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Robot_8hpp_source.html">Robot.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Robot:</div>
@@ -85,33 +88,46 @@ Inheritance diagram for Robot:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a924320124b09c2f2ac1621aa210d5f38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a924320124b09c2f2ac1621aa210d5f38">~Robot</a> ()</td></tr>
+<tr class="memdesc:a924320124b09c2f2ac1621aa210d5f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class destructor.  <a href="#a924320124b09c2f2ac1621aa210d5f38">More...</a><br /></td></tr>
 <tr class="separator:a924320124b09c2f2ac1621aa210d5f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66f23dae271748d525cf3ab046375f79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a66f23dae271748d525cf3ab046375f79">RobotInit</a> () override</td></tr>
+<tr class="memdesc:a66f23dae271748d525cf3ab046375f79"><td class="mdescLeft">&#160;</td><td class="mdescRight">This code is run when the robot boots up.  <a href="#a66f23dae271748d525cf3ab046375f79">More...</a><br /></td></tr>
 <tr class="separator:a66f23dae271748d525cf3ab046375f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a810e6143a208a6314491366e3c714357"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a810e6143a208a6314491366e3c714357">DisabledInit</a> () override</td></tr>
+<tr class="memdesc:a810e6143a208a6314491366e3c714357"><td class="mdescLeft">&#160;</td><td class="mdescRight">This code runs once as soon as the robot is disabled.  <a href="#a810e6143a208a6314491366e3c714357">More...</a><br /></td></tr>
 <tr class="separator:a810e6143a208a6314491366e3c714357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c7309f5f1cb242ea8c74f1abf03b540"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a8c7309f5f1cb242ea8c74f1abf03b540">DisabledPeriodic</a> () override</td></tr>
+<tr class="memdesc:a8c7309f5f1cb242ea8c74f1abf03b540"><td class="mdescLeft">&#160;</td><td class="mdescRight">This code is run in a loop while the robot is disabled.  <a href="#a8c7309f5f1cb242ea8c74f1abf03b540">More...</a><br /></td></tr>
 <tr class="separator:a8c7309f5f1cb242ea8c74f1abf03b540"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2136cfc015936285218c8a8db984d6bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a2136cfc015936285218c8a8db984d6bc">AutonomousInit</a> () override</td></tr>
+<tr class="memdesc:a2136cfc015936285218c8a8db984d6bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This code is run once at the very begining of auto.  <a href="#a2136cfc015936285218c8a8db984d6bc">More...</a><br /></td></tr>
 <tr class="separator:a2136cfc015936285218c8a8db984d6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac11143dd674e0e02fef5329e2df24830"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#ac11143dd674e0e02fef5329e2df24830">AutonomousPeriodic</a> () override</td></tr>
+<tr class="memdesc:ac11143dd674e0e02fef5329e2df24830"><td class="mdescLeft">&#160;</td><td class="mdescRight">This code is run in a loop during auto.  <a href="#ac11143dd674e0e02fef5329e2df24830">More...</a><br /></td></tr>
 <tr class="separator:ac11143dd674e0e02fef5329e2df24830"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3e246794bfbbb4406fc87f351762038"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#aa3e246794bfbbb4406fc87f351762038">TeleopInit</a> () override</td></tr>
+<tr class="memdesc:aa3e246794bfbbb4406fc87f351762038"><td class="mdescLeft">&#160;</td><td class="mdescRight">This code is run once at the very beginning of teleop.  <a href="#aa3e246794bfbbb4406fc87f351762038">More...</a><br /></td></tr>
 <tr class="separator:aa3e246794bfbbb4406fc87f351762038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a324322627c63b3870daf7c7ddc5bea63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a324322627c63b3870daf7c7ddc5bea63">TeleopPeriodic</a> () override</td></tr>
+<tr class="memdesc:a324322627c63b3870daf7c7ddc5bea63"><td class="mdescLeft">&#160;</td><td class="mdescRight">This code is run in a loop suring teleop.  <a href="#a324322627c63b3870daf7c7ddc5bea63">More...</a><br /></td></tr>
 <tr class="separator:a324322627c63b3870daf7c7ddc5bea63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ac222d45d30a6d0c572fd36d18c6ccc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a9ac222d45d30a6d0c572fd36d18c6ccc">TestInit</a> () override</td></tr>
+<tr class="memdesc:a9ac222d45d30a6d0c572fd36d18c6ccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This code is run once at the very benining of test mode.  <a href="#a9ac222d45d30a6d0c572fd36d18c6ccc">More...</a><br /></td></tr>
 <tr class="separator:a9ac222d45d30a6d0c572fd36d18c6ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0ac44a962e609e9b042285e699d1db8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#af0ac44a962e609e9b042285e699d1db8">TestPeriodic</a> () override</td></tr>
+<tr class="memdesc:af0ac44a962e609e9b042285e699d1db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This code is run in a loop during test mode.  <a href="#af0ac44a962e609e9b042285e699d1db8">More...</a><br /></td></tr>
 <tr class="separator:af0ac44a962e609e9b042285e699d1db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a0d613b6f1c4ab6d5f809f1642207b3d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDriveWithJoystick.html">DriveWithJoystick</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a0d613b6f1c4ab6d5f809f1642207b3d6">pDriveWithJoystick</a></td></tr>
+<tr class="memdesc:a0d613b6f1c4ab6d5f809f1642207b3d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer that contains the <a class="el" href="classDriveWithJoystick.html">DriveWithJoystick</a> class.  <a href="#a0d613b6f1c4ab6d5f809f1642207b3d6">More...</a><br /></td></tr>
 <tr class="separator:a0d613b6f1c4ab6d5f809f1642207b3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8fd9812f81eb1b28c5f45ea9c7c804f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDriveWithTriggers.html">DriveWithTriggers</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#ae8fd9812f81eb1b28c5f45ea9c7c804f">pDriveWithTriggers</a></td></tr>
+<tr class="memdesc:ae8fd9812f81eb1b28c5f45ea9c7c804f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer that contains the <a class="el" href="classDriveWithJoystick.html">DriveWithJoystick</a> class.  <a href="#ae8fd9812f81eb1b28c5f45ea9c7c804f">More...</a><br /></td></tr>
 <tr class="separator:ae8fd9812f81eb1b28c5f45ea9c7c804f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3360d56507192a8e2e506911f71dd40b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGenericControl.html">GenericControl</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a3360d56507192a8e2e506911f71dd40b">pGenericControl</a></td></tr>
+<tr class="memdesc:a3360d56507192a8e2e506911f71dd40b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer the contains the <a class="el" href="classGenericControl.html">GenericControl</a> class.  <a href="#a3360d56507192a8e2e506911f71dd40b">More...</a><br /></td></tr>
 <tr class="separator:a3360d56507192a8e2e506911f71dd40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -130,7 +146,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a26619067e892253308c590ea7afe58d2"><td class="memItemLeft" align="right" valign="top">frc::Command *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a26619067e892253308c590ea7afe58d2">pAutonomousCommand</a></td></tr>
 <tr class="separator:a26619067e892253308c590ea7afe58d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The main robot class that is called by the RoboRIO. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a924320124b09c2f2ac1621aa210d5f38"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a924320124b09c2f2ac1621aa210d5f38">&#9670;&nbsp;</a></span>~Robot()</h2>
 
@@ -145,6 +163,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The class destructor. </p>
 
 </div>
 </div>
@@ -172,6 +192,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>This code is run once at the very begining of auto. </p>
+
 </div>
 </div>
 <a id="ac11143dd674e0e02fef5329e2df24830"></a>
@@ -196,6 +218,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>This code is run in a loop during auto. </p>
 
 </div>
 </div>
@@ -222,6 +246,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>This code runs once as soon as the robot is disabled. </p>
+
 </div>
 </div>
 <a id="a8c7309f5f1cb242ea8c74f1abf03b540"></a>
@@ -246,6 +272,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>This code is run in a loop while the robot is disabled. </p>
 
 </div>
 </div>
@@ -297,6 +325,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>This code is run when the robot boots up. </p>
+
 </div>
 </div>
 <a id="aa3e246794bfbbb4406fc87f351762038"></a>
@@ -321,6 +351,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>This code is run once at the very beginning of teleop. </p>
 
 </div>
 </div>
@@ -347,6 +379,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>This code is run in a loop suring teleop. </p>
+
 </div>
 </div>
 <a id="a9ac222d45d30a6d0c572fd36d18c6ccc"></a>
@@ -372,6 +406,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>This code is run once at the very benining of test mode. </p>
+
 </div>
 </div>
 <a id="af0ac44a962e609e9b042285e699d1db8"></a>
@@ -396,6 +432,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>This code is run in a loop during test mode. </p>
 
 </div>
 </div>
@@ -434,6 +472,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>A pointer that contains the <a class="el" href="classDriveWithJoystick.html">DriveWithJoystick</a> class. </p>
+
 </div>
 </div>
 <a id="ae8fd9812f81eb1b28c5f45ea9c7c804f"></a>
@@ -448,6 +488,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>A pointer that contains the <a class="el" href="classDriveWithJoystick.html">DriveWithJoystick</a> class. </p>
+
 </div>
 </div>
 <a id="a3360d56507192a8e2e506911f71dd40b"></a>
@@ -461,6 +503,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>A pointer the contains the <a class="el" href="classGenericControl.html">GenericControl</a> class. </p>
 
 </div>
 </div>

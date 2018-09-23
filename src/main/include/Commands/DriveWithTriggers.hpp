@@ -2,18 +2,18 @@
 #define _DRIVEWITHTRIGGERS_HG_
 
 // Include Required Files
-#include <CommandBase.hpp>						// Wpilib CommandBase
-#include <WPILib.h>								// Wpilib
-#include <ntcore.h>								// Wpilib NetworkTables Core Lib
+#include <CommandBase.hpp>											// Wpilib CommandBase
+#include <WPILib.h>															// Wpilib
+#include <ntcore.h>															// Wpilib NetworkTables Core Lib
 #include <networktables/NetworkTableInstance.h>	// Wpilib NetworkTables
-#include <Subsystems/CVServer.hpp>				// NetworkTables-Based Control Server
-#include <tuple>							// STD tuple Lib
+#include <Subsystems/CVServer.hpp>							// NetworkTables-Based Control Server
+#include <tuple>																// STD tuple Lib
 
 class DriveWithTriggers: public CommandBase {
 public:
 	// Functions
-	DriveWithTriggers();
-	~DriveWithTriggers();
+	DriveWithTriggers();				//!< Class constructor
+	~DriveWithTriggers();				//!< Class destructor
 	void Initialize() override;
 	void Execute() override;
 	bool IsFinished() override;

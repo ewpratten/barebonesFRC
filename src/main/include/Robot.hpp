@@ -4,12 +4,12 @@
 #define _ROBOT_HG_
 
 // Include required files
-#include <WPILib.h>							// Wpilib Toolsuite
-#include <Commands/Command.h>				// Wpilib Command handler
-#include <Commands/DriveWithJoystick.hpp>	// DriveWithJoystick
-#include <Commands/DriveWithTriggers.hpp>	// DriveWithTriggers
-#include <Commands/GenericControl.hpp>		// GenericControl
-#include <Commands/Scheduler.h>				// Command Scheduler
+#include <WPILib.h>													// Wpilib Toolsuite
+#include <Commands/Command.h>								// Wpilib Command handler
+#include <Commands/DriveWithJoystick.hpp>		// DriveWithJoystick
+#include <Commands/DriveWithTriggers.hpp>		// DriveWithTriggers
+#include <Commands/GenericControl.hpp>			// GenericControl
+#include <Commands/Scheduler.h>							// Command Scheduler
 #include <SmartDashboard/SendableChooser.h>	// Wpilib Smartdashboard Auto Selection
 
 class Robot: public frc::TimedRobot {

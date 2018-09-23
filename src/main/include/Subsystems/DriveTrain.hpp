@@ -1,3 +1,5 @@
+//! The subsystem in charge of controlling the robot's DriveTrain
+
 #ifndef _DRIVETRAIN_HG_
 #define _DRIVETRAIN_HG_
 
@@ -6,14 +8,15 @@
 #include <Commands/Subsystem.h>
 #include <ctre/Phoenix.h>
 #include <Drive/DifferentialDrive.h>
+
 // If you get an error including this library, you'll need to get the navX libraries from here:
 // https://www.pdocs.kauailabs.com/navx-mxp/software/roborio-libraries/c/
 #include <AHRS.h>
 
 class DriveTrain: public frc::Subsystem, PIDOutput {
 public:
-	DriveTrain();
-	~DriveTrain();
+	DriveTrain(); 	//!< Class constructor
+	~DriveTrain();	//!< Class destructor
 
 	void InitAutonomousMode(void);
 	void InitDefaultCommand(void) override;

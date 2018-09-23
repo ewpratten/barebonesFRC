@@ -72,10 +72,12 @@ void Robot::TeleopInit() {
 	if (JoyDrive == true) {
 		if (this->pDriveWithJoystick != nullptr) {
 			this->pDriveWithJoystick->Start();
+			this->pShiftGears->SetGearPtr(this->pDriveWithJoystick->GetGearPtr());
 		}
 	} else {
 		if (this->pDriveWithTriggers != nullptr) {
 			this->pDriveWithTriggers->Start();
+			this->pShiftGears->SetGearPtr(this->pDriveWithTriggers->GetGearPtr());
 		}
 	}
 

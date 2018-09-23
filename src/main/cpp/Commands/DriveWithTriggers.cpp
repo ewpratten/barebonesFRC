@@ -17,6 +17,10 @@ DriveWithTriggers::DriveWithTriggers() {
 	return;
 }
 
+double *DriveWithTriggers::GetGearPtr(){
+	return &this->gear;
+}
+
 DriveWithTriggers::~DriveWithTriggers() {
 	LOG("[DriveWithTriggers] Destroyed");
 
@@ -64,6 +68,9 @@ void DriveWithTriggers::Execute() {
 		xSpeed = Speed;
 		zRotation = Rotation;
 	}
+
+	//Apply the gear muiltiplier
+	xSpeed = xSpeed * gear;
 
 	// Call DriveTrain
 	CommandBase::pDriveTrain->ArcadeDrive(xSpeed, zRotation);

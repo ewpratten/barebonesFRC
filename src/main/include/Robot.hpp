@@ -4,6 +4,7 @@
 // Include required files
 #include <WPILib.h>							// Wpilib Toolsuite
 #include <Commands/Command.h>				// Wpilib Command handler
+#include <Commands/ShiftGears.hpp>			// Gear Shifter
 #include <Commands/DriveWithJoystick.hpp>	// DriveWithJoystick
 #include <Commands/DriveWithTriggers.hpp>	// DriveWithTriggers
 #include <Commands/GenericControl.hpp>		// GenericControl
@@ -28,6 +29,7 @@ public:
 	DriveWithJoystick* pDriveWithJoystick;
 	DriveWithTriggers* pDriveWithTriggers;
 	GenericControl* pGenericControl;
+	ShiftGears* pShiftGears;
 
 private:
 	int GetAutoType();

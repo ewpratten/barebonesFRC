@@ -24,6 +24,10 @@ DriveWithJoystick::~DriveWithJoystick() {
 	return;
 }
 
+double *DriveWithJoystick::GetGearPtr(){
+	return &this->gear;
+}
+
 void DriveWithJoystick::Initialize() {
 	LOG("[DriveWithJoystick] Initialized");
 	// Store pointer to SmartDashboard in table
@@ -71,6 +75,8 @@ void DriveWithJoystick::Execute() {
 		xSpeed = Speed;
 		zRotation = Rotation;
 	}
+
+	xSpeed = xSpeed * gear;
 
 	// Call DriveTrain
 	CommandBase::pDriveTrain->ArcadeDrive(xSpeed, zRotation);

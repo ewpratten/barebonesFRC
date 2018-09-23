@@ -1,3 +1,4 @@
+//Header
 #ifndef _DRIVEWITHTRIGGERS_HG_
 #define _DRIVEWITHTRIGGERS_HG_
 
@@ -19,9 +20,10 @@ public:
 	bool IsFinished() override;
 	void End() override;
 	void Interrupted() override;
-
+	double* GetGearPtr();
 private:
 	// Define Vars
+	double gear = 1.0;
 	bool isReverse = false;
 	std::shared_ptr<NetworkTable> table;
 };

@@ -1,3 +1,5 @@
+//! The base class for all commands
+
 #ifndef _COMMANDBASE_HG_
 #define _COMMANDBASE_HG_
 
@@ -9,12 +11,12 @@
 
 class CommandBase: public frc::Command {
 public:
-	CommandBase();
-	~CommandBase();
+	CommandBase();	//!< Class constructor
+	~CommandBase();	//!< Class destructor
 
-	static OI* pOI;
-	static DriveTrain* pDriveTrain;
-	static Generic* pGeneric;
+	static OI* pOI;									//!< Pointer to the OI class
+	static DriveTrain* pDriveTrain;	//!< Pointer to the DriveTrain subsystem
+	static Generic* pGeneric;				//!< Pointer to the Generic subsystem
 };
 
 #endif

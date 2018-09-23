@@ -11,7 +11,7 @@ ShiftGears::ShiftGears() {
 
 // Called just before this Command runs the first time
 void ShiftGears::Initialize() {
-
+    return;
 }
 
 // Called repeatedly when this Command is scheduled to run
@@ -53,11 +53,11 @@ bool ShiftGears::IsFinished() {
 
 // Called once after isFinished returns true
 void ShiftGears::End() {
-
+    return;
 }
 
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
 void ShiftGears::Interrupted() {
-
+    return;
 }

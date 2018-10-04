@@ -7,6 +7,7 @@
 class ShiftGears : public frc::Command {
 public:
 	ShiftGears();
+	~ShiftGears();
 	void Initialize() override;
 	void Execute() override;
 	bool IsFinished() override;

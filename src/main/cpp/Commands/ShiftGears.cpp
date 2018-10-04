@@ -14,9 +14,6 @@ void ShiftGears::Initialize() {
     return;
 }
 
-ShiftGears::~ShiftGears(){
-    LOG("[ShiftGears] Destroyed")
-}
 
 // Called repeatedly when this Command is scheduled to run
 void ShiftGears::Execute() {
@@ -64,5 +61,10 @@ void ShiftGears::End() {
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
 void ShiftGears::Interrupted() {
+    return;
+}
+
+ShiftGears::~ShiftGears() {
+    LOG("[ShiftGears] Destroyed")
     return;
 }

@@ -70,7 +70,7 @@ void DriveWithTriggers::Execute() {
 	}
 
 	//Apply the gear muiltiplier
-	xSpeed = xSpeed * gear;
+	xSpeed = xSpeed * this->gear;
 
 	// Call DriveTrain
 	CommandBase::pDriveTrain->ArcadeDrive(xSpeed, zRotation);

@@ -76,7 +76,7 @@ void DriveWithJoystick::Execute() {
 		zRotation = Rotation;
 	}
 
-	xSpeed = xSpeed * gear;
+	xSpeed = xSpeed * this->gear;
 
 	// Call DriveTrain
 	CommandBase::pDriveTrain->ArcadeDrive(xSpeed, zRotation);

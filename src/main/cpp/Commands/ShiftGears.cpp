@@ -14,6 +14,10 @@ void ShiftGears::Initialize() {
     return;
 }
 
+ShiftGears::~ShiftGears(){
+    LOG("[ShiftGears] Destroyed")
+}
+
 // Called repeatedly when this Command is scheduled to run
 void ShiftGears::Execute() {
 	frc::XboxController* pJoyDriver = CommandBase::pOI->GetJoystickDrive();
@@ -44,6 +48,7 @@ void ShiftGears::Execute() {
 
 void ShiftGears::SetGearPtr(double *gear){
     this->pGear = gear;
+    return;
 }
 
 // Make this return true when this Command no longer needs to run execute()

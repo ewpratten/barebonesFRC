@@ -8,6 +8,7 @@ Robot::~Robot() {
 	// Delete command pointers
 	delete this->pDriveWithJoystick;
 	delete this->pDriveWithTriggers;
+	delete this->pShiftGears;
 
 	if (this->pAutonomousCommand != nullptr)
 		delete this->pAutonomousCommand;
@@ -22,7 +23,7 @@ void Robot::RobotInit() {
 	// Initialize the drive commands
 	this->pDriveWithJoystick = new DriveWithJoystick();
 	this->pDriveWithTriggers = new DriveWithTriggers();
-
+	this->pShiftGears = new ShiftGears();
 
 	if(Camera_Server){ // If the Camera_server setting is set in RobotCFG.
 		// Initialize the camera server

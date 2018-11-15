@@ -1,26 +1,13 @@
-﻿---
+---
 BasedOnStyle: Chromium
-AlignEscapedNewlinesLeft: 'true'
+AlignAfterOpenBracket: Align
 AlignTrailingComments: 'true'
-AllowAllParametersOfDeclarationOnNextLine: 'false'
-AllowShortBlocksOnASingleLine: 'true'
 AllowShortFunctionsOnASingleLine: All
-AllowShortIfStatementsOnASingleLine: 'false'
-AllowShortLoopsOnASingleLine: 'false'
+AllowShortIfStatementsOnASingleLine: 'true'
 AlwaysBreakBeforeMultilineStrings: 'false'
-AlwaysBreakTemplateDeclarations: 'false'
-BinPackParameters: 'true'
-BreakBeforeBinaryOperators: 'false'
-BreakBeforeBraces: Stroustrup
-BreakBeforeTernaryOperators: 'false'
-BreakConstructorInitializersBeforeComma: 'false'
-ColumnLimit: '160'
-ConstructorInitializerAllOnOneLineOrOnePerLine: 'false'
-Cpp11BracedListStyle: 'false'
-DerivePointerAlignment: 'true'
+ColumnLimit: '100'
 Language: Cpp
-SpacesInParentheses: 'true'
-Standard: Auto
-UseTab: Always
+SortIncludes: 'true'
+SpaceBeforeParens: Never
 
 ...

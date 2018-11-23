@@ -4,59 +4,6 @@
 #include "DriveTrainMap.hpp"
 #include <Utilities/Log.hpp>
 
-<<<<<<< HEAD
-DriveTrain::DriveTrain() : frc::Subsystem( "DriveTrain" )
-{
-  LOG( "[DriveTrain] Constructed" );
-  // Initialize the motors
-  this->pLeftFrontMotor = new can::WPI_TalonSRX( DRIVETRAIN_LEFT_FRONT_MOTOR_ID );
-  this->pLeftRearMotor = new can::WPI_TalonSRX( DRIVETRAIN_LEFT_REAR_MOTOR_ID );
-  this->pLeftRearMotor->Follow( *pLeftFrontMotor );
-
-  this->pLeftFrontMotor->SetInverted( false );  // change this based on test or production robot
-  this->pLeftRearMotor->SetInverted( false );   // change this based on test or production robot
-  this->pLeftFrontMotor->SetNeutralMode( NeutralMode::Brake );
-  this->pLeftRearMotor->SetNeutralMode( NeutralMode::Brake );
-
-  this->pRightFrontMotor = new can::WPI_TalonSRX( DRIVETRAIN_RIGHT_FRONT_MOTOR_ID );
-  this->pRightRearMotor = new can::WPI_TalonSRX( DRIVETRAIN_RIGHT_REAR_MOTOR_ID );
-  this->pRightRearMotor->Follow( *pRightFrontMotor );
-
-  this->pRightFrontMotor->SetInverted( true );  // change this based on test or production robot
-  this->pRightRearMotor->SetInverted( true );   // change this based on test or production robot
-  this->pRightFrontMotor->SetNeutralMode( NeutralMode::Brake );
-  this->pRightRearMotor->SetNeutralMode( NeutralMode::Brake );
-
-  this->pRobotDrive = new frc::DifferentialDrive( *pLeftFrontMotor, *pRightFrontMotor );
-
-  this->pLeftFrontMotor->SetSafetyEnabled( false );
-  this->pLeftRearMotor->SetSafetyEnabled( false );
-  this->pRightFrontMotor->SetSafetyEnabled( false );
-  this->pRightRearMotor->SetSafetyEnabled( false );
-  this->pRobotDrive->SetSafetyEnabled( false );
-
-  // Initialize the gyro
-  // (See comment here about which port. We are using MXP, the one physically on
-  // top of the RoboRio
-  //  https://www.pdocs.kauailabs.com/navx-mxp/software/roborio-libraries/c/)
-  this->pGyro = new AHRS( SPI::Port::kMXP );
-  this->pGyro->Reset();
-
-  return;
-}
-
-DriveTrain::~DriveTrain()
-{
-  delete this->pRobotDrive;
-  delete this->pRightFrontMotor;
-  delete this->pRightRearMotor;
-  delete this->pLeftFrontMotor;
-  delete this->pLeftRearMotor;
-
-  delete this->pGyro;
-
-  return;
-=======
 DriveTrain::DriveTrain() :
 		frc::Subsystem("DriveTrain") {
 	LOG("[DriveTrain] Constructed");
@@ -109,7 +56,6 @@ DriveTrain::DriveTrain() :
 	this->dRotateToAngleRate = 0.0f;
 
 	return;
->>>>>>> parent of 21efe0c... formatted all code
 }
 
 DriveTrain::~DriveTrain() {
@@ -119,14 +65,10 @@ DriveTrain::~DriveTrain() {
 	delete this->pLeftFrontMotor;
 	delete this->pLeftRearMotor;
 
-<<<<<<< HEAD
-  return;
-=======
 	delete this->pGyro;
 	delete this->pTurnController;
 
 	return;
->>>>>>> parent of 21efe0c... formatted all code
 }
 
 void DriveTrain::InitAutonomousMode() {
@@ -189,11 +131,6 @@ void DriveTrain::InitAutonomousMode() {
 	return;
 }
 
-<<<<<<< HEAD
-void DriveTrain::DriveSetup()
-{
-  DriveTrain::ResetEncoders();
-=======
 void DriveTrain::InitDefaultCommand() {
 	LOG("[DriveTrain] Initialized Default Command");
 
@@ -248,19 +185,12 @@ void DriveTrain::InitMotionProfilingMode() {
 
 void DriveTrain::DriveSetup() {
 	DriveTrain::ResetEncoders();
->>>>>>> parent of 21efe0c... formatted all code
 
 	this->pRightFrontMotor->Follow(*pLeftFrontMotor);
 
 	return;
 }
 
-<<<<<<< HEAD
-void DriveTrain::ArcadeDrive( double xSpeed, double zRotation )
-{
-  this->pRobotDrive->ArcadeDrive( zRotation,
-				  xSpeed );  // API parameter order is incorrect
-=======
 /**
  * Used by Autonomous Commands
  */
@@ -295,7 +225,6 @@ void DriveTrain::Turn() {
 
 void DriveTrain::ArcadeDrive(double xSpeed, double zRotation) {
 	this->pRobotDrive->ArcadeDrive(zRotation, xSpeed); // API parameter order is incorrect
->>>>>>> parent of 21efe0c... formatted all code
 
 	return;
 }
@@ -317,9 +246,6 @@ double DriveTrain::GetAngle() {
 	return pGyro->GetAngle();
 }
 
-<<<<<<< HEAD
-bool DriveTrain::IsDriving() { return this->pGyro->IsMoving(); }
-=======
 can::WPI_TalonSRX* DriveTrain::GetLeftFrontMotor() {
 	return this->pLeftFrontMotor;
 }
@@ -371,17 +297,11 @@ double DriveTrain::GetTargetPosition() {
 bool DriveTrain::IsDriving() {
 	return this->pGyro->IsMoving();
 }
->>>>>>> parent of 21efe0c... formatted all code
 
 bool DriveTrain::IsTurning() {
 	return this->pGyro->IsRotating();
 }
 
-<<<<<<< HEAD
-void DriveTrain::ResetGyro()
-{
-  pGyro->ZeroYaw();
-=======
 void DriveTrain::ResetDrive() {
 	// reset the motors
 	this->pLeftFrontMotor->Set(ControlMode::PercentOutput, 0);
@@ -416,12 +336,9 @@ void DriveTrain::ResetEncoders() {
 
 void DriveTrain::ResetGyro() {
 	pGyro->ZeroYaw();
->>>>>>> parent of 21efe0c... formatted all code
 
 	return;
 }
-<<<<<<< HEAD
-=======
 
 void DriveTrain::SetEncoders() {
 	return;
@@ -463,4 +380,3 @@ void DriveTrain::PIDWrite(double output) {
 
 	return;
 }
->>>>>>> parent of 21efe0c... formatted all code
